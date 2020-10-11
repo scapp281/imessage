@@ -1,7 +1,7 @@
 .sidebar {
+    display: flex;
     flex: 0.35;
     height: 100vh;
-    display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
     border-right: 1px solid lightgray;
@@ -19,6 +19,7 @@
     margin: 10px;
 }
 
+/********search container ********/
 .sidebar__input {
     display: flex;
     align-items: center;
@@ -29,9 +30,25 @@
     border-radius: 5px;
 }
 
-/********input bar********/
+/******** search input border********/
 .sidebar__input > input {
     border: none;
     background: transparent;
+/*    focus click border*/
     outline-width: 0;
+}
+
+.sidebar__chats{
+    overflow: scroll;
+}
+
+/*hide scrollbar for Chrome, Safari and Opera*/
+.sidebar__chats::-webkit-scrollbar{
+    display: none;
+}
+
+/*hide scrollbar for IE, Edge and Firefox*/
+.sidebar__chats {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
