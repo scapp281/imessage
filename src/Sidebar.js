@@ -3,7 +3,7 @@ import './Sidebar.css';
 import SidebarChat from './SidebarChat';
 import { Avatar, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import RateReviewOutlinedIcon from '@material-ui/icons/RateReviewOutlined';
+import RateReviewTwoToneIcon from '@material-ui/icons/RateReviewTwoTone';
 
 function Sidebar() {
   return (
@@ -16,7 +16,7 @@ function Sidebar() {
             <input placeholder="search" />
         </div>
         <IconButton variant="outlined" className="sidebar__inputButton">
-            <RateReviewOutlinedIcon />
+            <RateReviewTwoToneIcon />
         </IconButton>
       </div>
       
